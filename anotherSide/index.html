@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+
+    <!--font-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat+Alternates:wght@300;400;500;600;700&family=Montserrat:ital,wght@0,300;0,400;0,500;0,700;1,700&display=swap" rel="stylesheet">
+    <title>myanotherSide</title>
+    <link rel="icon" href="asset/logo.png" type="image/png">
+    </head>
+<body >
+<!--alert section-->
+<div class="alert-container" id="alertContainer">
+</div>
+
+<!--hero section-->
+<section class="hero">
+<div class="text">
+    <div class="p-1">
+        <h1 class="typing"></h1>
+        <span><img src="asset/hand.svg" alt=""></span>
+    </div>
+    <div class="p-2">
+        <h4>What kind of person do you think I am?</h4>
+        <p>please help me to be a better person <img src="asset/raisinghand.svg" alt=""></p>
+    </div>
+</div>
+<!--cat icon-->
+    <div class="icon">
+        <div class="wrap">
+            <div class="cat"><img src="asset/cat.png" alt=""></div>
+            <div class="oval"><img src="asset/oval.png" alt=""></div>
+                <span class="span" style="color: #fff;">click me ^_^</span>
+        </div>
+    </div>
+</section>
+
+<!--form section-->
+<form name="anotherside-form">
+    <div class="container">
+        <div class="form-input">
+            <div class="content-wrap">
+                <textarea name="pesan" id="message" cols="70" rows="15" placeholder="tulisen ng kene..."></textarea>
+                <img src="asset/penicon.png" alt="">
+            </div>
+            <div class="content-wrap-text"> 
+                <input type="text" name="nama" id="name" placeholder="tulisen jenengmu..." maxlength="20">
+                <img src="asset/user.svg" alt="">
+            </div>    
+                <div class="forcheck">
+                    <input class="checkbox" type="checkbox" name="" id="check">
+                    <label class="check" for="check">set as a anonym</label>        
+                </div>    
+            </div>
+    </div>
+    <div class="btn">
+        <button type="submit" id="send" disabled>KIRIM</button>
+    </div>  
+</form>
+
+<!--footer-->
+<footer>
+    <p>created by @taaryyy21_</p>
+</footer>
+
+<!--js script-->
+<script src="sciript.js"></script>
+
+<!-- typed.js link  -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/typed.js/2.0.12/typed.min.js"></script>
+
+<script>
+let typed = new Typed('.typing', {
+    strings : ['halooo...', 'haii guisz...'],
+    loop : true,
+    smartBackspace: true,
+    typeSpeed : 300,
+    showCursor: false,
+    cursorChar: '|',
+    autoInsertCss: true,
+})
+</script>
+
+</body>
+</html>
